@@ -10,14 +10,14 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    if (loading) return;
+    // if (loading) return;
 
-    if (user) {
-      router.push('/dashboard');
-      return;
-    }
+    // if (user) {
+    router.push('/dashboard');
+    //   return;
+    // }
 
-    router.push('/login');
+    // router.push('/login');
   }, [user, loading, router]);
 
   return (
